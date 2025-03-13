@@ -70,12 +70,22 @@ box.module {
     margin-left: 10px;
 }
 
+#mpd {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
 #temperature {
     margin-right: 10px;
     margin-left: 10px;
 }
 
 #network {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#wireplumber {
     margin-right: 10px;
     margin-left: 10px;
 }

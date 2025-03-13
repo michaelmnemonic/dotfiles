@@ -3,7 +3,7 @@
     "layer": "top",
     "mode": "dock",
     "modules-left": [
-      "niri/workspaces"
+      "mpd"
     ],
     "modules-center": [
     "clock",
@@ -34,6 +34,10 @@
         "*": 4, // 5 workspaces by default on every monitor
         "HDMI-A-1": 3 // but only three on HDMI-A-1
       },
+    },
+    "mpd": {
+        "format": "󰝚 {title} - {artist}",
+        "max-length": 200
     },
     "clock": {
        "format": "{:%m-%d %H:%M}",
