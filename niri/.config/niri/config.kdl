@@ -104,6 +104,13 @@ output "eDP-1" {
 	background-color "#6f6f6f"
 }
 
+output "LG Electronics LG HDR WQHD+ 301NTDV8S834" {
+	mode "3840x1600@119.982"
+	scale 1.0
+	variable-refresh-rate
+	background-color "#6f6f6f"
+}
+
 // Settings that influence how windows are positioned and sized.
 // Find more information on the wiki:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Layout
