@@ -11,8 +11,7 @@
     "modules-right": [
     "wireplumper",
     "network",
-    "temperature",
-    "memory",
+    "battery#2",
     "battery",
     "custom/power"
     ],
@@ -58,15 +57,18 @@
         "warning": 30,
         "critical": 15
       },
-      "format": "{icon}  {capacity}% @ {power}W",
-      "format-full": "{icon}  {capacity}% @ {power}W",
-      "format-charging": "  {capacity}% @ {power}W",
-      "format-plugged": "  {capacity}% @ {power}W",
+      "format": "{icon}  {capacity}%",
+      "format-full": "{icon}  {capacity}%",
+      "format-charging": "  {capacity}%",
+      "format-plugged": "  {capacity}%",
       "format-alt": "{time} {icon}",
       "format-icons": ["", "", "", "", ""]
     },
+    "battery#2": {
+      "format": "󰊚  {power}W",
+    },
     "network": {
-      "format-wifi": "  {signalStrength}%",
+      "format-wifi": "  {essid} ({signalStrength}%)",
       "format-ethernet": "{cidr} ",
       "tooltip-format": "{ifname} via {gwaddr} ",
       "format-linked": "{ifname} (No IP) ",

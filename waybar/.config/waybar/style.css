@@ -54,6 +54,12 @@
     transition: all 0.5s ease;
 }
 
+#workspaces button {
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+    box-shadow: none; /* Remove any shadow */
+}
+
 box.module {
     padding-top: 2px;
     padding-bottom: 2px;
