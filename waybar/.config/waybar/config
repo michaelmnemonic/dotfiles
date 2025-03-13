@@ -49,7 +49,7 @@
       "tooltip": false
     },
     "memory": {
-      "format": " {percentage}% ({used}GiB) "
+      "format": " {percentage}%"
     },
     "temperature": {
       "critical-threshold": 80,
