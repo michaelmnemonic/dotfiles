@@ -70,11 +70,11 @@ box.module {
     margin-left: 10px;
 }
 
-#battery.warning {
+#battery.Discharging.warning {
     color: orange;
 }
 
-#battery.critical {
+#battery.Discharging.critical {
     color: red;
 }
 
