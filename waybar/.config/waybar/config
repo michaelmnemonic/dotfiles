@@ -9,7 +9,7 @@
     "clock",
     ],
     "modules-right": [
-    "wireplumper",
+    "wireplumber",
     "network",
     "battery#2",
     "battery",
@@ -76,7 +76,7 @@
       "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
     "wireplumber": {
-      "format": "{icon}  {volume}%",
+      "format": "{icon}  {node_name} ({volume}%)",
       "format-bluetooth": "{volume}% {icon} {format_source}",
       "format-bluetooth-muted": " {icon} {format_source}",
       "format-muted": "",
