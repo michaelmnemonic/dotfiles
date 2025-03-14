@@ -42,8 +42,8 @@
 	   "format-paused": "{status_icon} <i>{title}</i>",
 	   "player-icons": {
 		  "default": "▶",
-		  "mpv": "🎵",
-		   "quodlibet": "🎵"
+		  "mpv": "󰝚",
+		   "quodlibet": "󰝚"
 	   },
 	   "tooltip-format": "{dynamic}",
 	   "status-icons": {
