@@ -62,6 +62,7 @@
 
 #workspaces button.active label {
     color: #ffc87f;
+    font-weight: bolder;
 }
 
 box.module {
