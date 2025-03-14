@@ -11,7 +11,7 @@
     "modules-right": [
     "wireplumber",
     "network",
-    "battery#2",
+    "custom/power_charon",
     "battery",
     "custom/power"
     ],
@@ -99,5 +99,11 @@
       "format": "⏻",
       "on-click": "systemctl poweroff",
       "tooltip": false
+    },
+    "custom/power_charon": {
+        "exec": "~/.config/waybar/power_charon.sh",
+        "interval": 5,
+        "format": "󰊚  {}",
+        "tooltip": false
     }
 }
