@@ -1,4 +1,5 @@
-# /usr/bin/env bash
+#!/run/current-system/sw/bin/nix-shell
+#!nix-shell -p gawk -i bash
 
 BAT_PATH=/sys/class/power_supply/qcom-battmgr-bat/power_now
 

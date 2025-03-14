@@ -101,7 +101,7 @@
       "tooltip": false
     },
     "custom/power_charon": {
-        "exec": "~/.config/waybar/power_charon.sh",
+        "exec": "/home/maik/.config/waybar/power_charon.sh",
         "interval": 5,
         "format": "󰊚  {}",
         "tooltip": false
