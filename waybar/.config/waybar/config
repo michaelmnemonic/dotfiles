@@ -6,49 +6,29 @@
       "niri/workspaces"
     ],
     "modules-center": [
-    "clock",
-    "mpris"
+      "clock",
+      "mpris"
     ],
     "modules-right": [
-    "tray",
-    "wireplumber",
-    "privacy",
-    "network",
-    "battery",
-    "custom/power"
+      "tray",
+      "wireplumber",
+      "privacy",
+      "network",
+      "battery",
+      "custom/power"
     ],
-    "hyprland/window": {
-      "format": "{}",
-      "max-length": 35,
-      "rewrite": {
-        "": "Harsh"
-      },
-      "separate-outputs": true
-    },
-    "hyprland/workspaces": {
-      "format": "{icon}",
-      "on-click": "activate",
-      "format-icons": {
-        "active": " "
-      },
-      "sort-by-number": true,
-      "persistent-workspaces": {
-        "*": 4, // 5 workspaces by default on every monitor
-        "HDMI-A-1": 3 // but only three on HDMI-A-1
-      }
-    },
     "mpris": {
-	   "format": "{player_icon} {title}",
-	   "format-paused": "{status_icon} <i>{title}</i>",
-	   "player-icons": {
-		  "default": "▶",
-		  "mpv": "󰝚",
-		   "quodlibet": "󰝚"
-	   },
-	   "tooltip-format": "{dynamic}",
-	   "status-icons": {
-		  "paused": "󰏤"
-	},
+      "format": "{player_icon} {title}",
+      "format-paused": "{status_icon} <i>{title}</i>",
+      "player-icons": {
+        "default": "▶",
+        "mpv": "󰝚",
+        "quodlibet": "󰝚"
+      },
+      "tooltip-format": "{dynamic}",
+        "status-icons": {
+        "paused": "󰏤"
+      },
 	    "ignored-players": ["firefox"]
     },
     "tray": {
@@ -56,26 +36,26 @@
       "spacing": 10
     },
     "mpd": {
-        "format": "󰝚 {title} - {artist}",
-        "max-length": 200
+      "format": "󰝚 {title} - {artist}",
+      "max-length": 200
     },
     "clock": {
-       "format": "{:%m-%d %H:%M}",
+      "format": "{:%m-%d %H:%M}",
       "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
       "format-alt": "{:%Y-%m-%d}",
       "calendar": {
-                    "mode"          : "year",
-                    "mode-mon-col"  : 3,
-                    "weeks-pos"     : "left",
-                    "on-scroll"     : 1,
-                    "format": {
-                              "months":     "<span color='#ffead3'><b>{}</b></span>",
-                              "days":       "<span color='#ecc6d9'><b>{}</b></span>",
-                              "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
-                              "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
-                              "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
-                              }
-                    }
+        "mode"          : "year",
+        "mode-mon-col"  : 3,
+        "weeks-pos"     : "left",
+        "on-scroll"     : 1,
+        "format": {
+          "months":     "<span color='#ffead3'><b>{}</b></span>",
+          "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+          "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+          "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+          "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+        }
+      }
     },
     "cpu": {
       "format": "  {usage}%",
@@ -89,9 +69,9 @@
       "format": " @ {temperatureC}°C"
     },
     "battery": {
-        "states": {
-            "warning": 15,
-            "critical": 7
+      "states": {
+        "warning": 15,
+        "critical": 7
       },
       "format": "{icon}  {time}",
       "format-full": "{icon}",
@@ -99,9 +79,6 @@
       "format-plugged": "  {time}%",
       "format-alt": "{time} {icon}",
       "format-icons": ["", "", "", "", ""]
-    },
-    "battery#2": {
-      "format": "󰊚  {power}W"
     },
     "network": {
       "format-wifi": "  {essid} ({signalStrength}%)",
@@ -155,15 +132,15 @@
       "tooltip": false
     },
     "custom/power_charon": {
-        "exec": "/home/maik/.config/waybar/power_charon.sh",
-        "interval": 5,
-        "format": "󰊚  {}",
-        "tooltip": false
+      "exec": "/home/maik/.config/waybar/power_charon.sh",
+      "interval": 5,
+      "format": "󰊚  {}",
+      "tooltip": false
     },
     "custom/gpu": {
-        "exec": "cat /sys/class/hwmon/hwmon4/device/gpu_busy_percent",
-        "format": "󰢮  {}%",
-        "return-type": "",
-        "interval": 5
+      "exec": "cat /sys/class/hwmon/hwmon4/device/gpu_busy_percent",
+      "format": "󰢮  {}%",
+      "return-type": "",
+      "interval": 5
     }
 }
