@@ -340,8 +340,17 @@ window-rule {
 
 window-rule {
     match app-id="org.pulseaudio.pavucontrol"
+    default-column-width { fixed 700; }
+    default-window-height { fixed 600; }
+    open-floating true
+    default-floating-position x=10 y=10 relative-to="top-right"
+}
+
+window-rule {
+    match app-id="org.gnome.Calculator"
     open-floating true
 }
+
 
 // Example: block out two password managers from screen capture.
 // (This example rule is commented out with a "/-" in front.)
