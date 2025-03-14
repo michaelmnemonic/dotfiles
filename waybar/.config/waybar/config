@@ -111,7 +111,7 @@
         "car": "",
         "default": ["", "", ""]
       },
-      "on-click": "/run/current-system/sw/bin/pavucontrol"
+      "on-click": "/run/current-system/sw/bin/pavucontrol -t 3"
     },
     "privacy": {
     	"icon-spacing": 10,
