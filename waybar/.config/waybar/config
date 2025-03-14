@@ -11,9 +11,6 @@
     "modules-right": [
     "wireplumber",
     "network",
-    "cpu",
-    "temperature",
-    "custom/gpu",
     "custom/power_charon",
     "battery",
     "custom/power"
