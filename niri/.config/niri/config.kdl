@@ -7,6 +7,11 @@ prefer-no-csd
 
 spawn-at-startup "/run/current-system/sw/bin/keepassxc"
 
+environment {
+    // Set display variable - note that this assumes xwayland-satellite binds to ":0" which is not guaranteed (but should work for single user session)
+    DISPLAY ":0"
+}
+
 // Input device configuration.
 // Find the full list of options on the wiki:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Input
