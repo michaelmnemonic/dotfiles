@@ -11,7 +11,14 @@
     "modules-right": [
     "wireplumber",
     "network",
+<<<<<<< HEAD
     "custom/power_charon",
+=======
+    "cpu",
+    "temperature",
+    "custom/gpu",
+    "memory",
+>>>>>>> 24a154c (Add gpu)
     "battery",
     "custom/power"
     ],
@@ -99,10 +106,18 @@
       "on-click": "systemctl poweroff",
       "tooltip": false
     },
+<<<<<<< HEAD
     "custom/power_charon": {
         "exec": "/home/maik/.config/waybar/power_charon.sh",
         "interval": 5,
         "format": "󰊚  {}",
         "tooltip": false
+=======
+    "custom/gpu": {
+        "exec": "cat /sys/class/hwmon/hwmon4/device/gpu_busy_percent",
+        "format": "󰢮  {}%",
+        "return-type": "",
+        "interval": 1
+>>>>>>> 24a154c (Add gpu)
     }
 }
