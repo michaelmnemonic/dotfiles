@@ -49,7 +49,7 @@
 	   "status-icons": {
 		  "paused": "󰏤"
 	},
-	    // "ignored-players": ["firefox"]
+	    "ignored-players": ["firefox"]
     },
     "tray": {
       "icon-size": 14,
