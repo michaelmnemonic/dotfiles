@@ -94,9 +94,9 @@
             "critical": 7
       },
       "format": "{icon}  {time}",
-      "format-full": "{icon}  {capacity}%",
-      "format-charging": "󱐋  {capacity}%",
-      "format-plugged": "  {capacity}%",
+      "format-full": "{icon}",
+      "format-charging": "󱐋  {time}%",
+      "format-plugged": "  {time}%",
       "format-alt": "{time} {icon}",
       "format-icons": ["", "", "", "", ""]
     },
