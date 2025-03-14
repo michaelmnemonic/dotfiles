@@ -6,7 +6,8 @@
       "niri/workspaces"
     ],
     "modules-center": [
-    "clock"
+    "clock",
+    "mpris"
     ],
     "modules-right": [
     "tray",
@@ -36,6 +37,20 @@
         "*": 4, // 5 workspaces by default on every monitor
         "HDMI-A-1": 3 // but only three on HDMI-A-1
       }
+    },
+    "mpris": {
+	   "format": "{player_icon} {title}",
+	   "format-paused": "{status_icon} <i>{title}</i>",
+	   "player-icons": {
+		  "default": "▶",
+		  "mpv": "🎵",
+		   "quodlibet": "🎵"
+	   },
+	   "tooltip-format": "{dynamic}",
+	   "status-icons": {
+		  "paused": "⏸"
+	},
+	    // "ignored-players": ["firefox"]
     },
     "tray": {
       "icon-size": 14,
