@@ -5,6 +5,8 @@
 
 prefer-no-csd
 
+spawn-at-startup "keepassxc --minimized .secrets/secrets.kdbx"
+
 // Input device configuration.
 // Find the full list of options on the wiki:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Input
@@ -351,6 +353,12 @@ window-rule {
     open-floating true
 }
 
+window-rule {
+    match app-id="org.keepassxc.KeePassXC"
+    default-column-width { fixed 700; }
+    default-window-height { fixed 700; }
+    open-floating true
+}
 
 // Example: block out two password managers from screen capture.
 // (This example rule is commented out with a "/-" in front.)
@@ -574,7 +582,7 @@ binds {
     // * adjust width as a percentage of screen width: "-10%" or "+10%"
     // Pixel sizes use logical, or scaled, pixels. I.e. on an output with scale 2.0,
     // set-column-width "100" will make the column occupy 200 physical screen pixels.
-    Mod+Minus { set-column-width "-10%"; }
+    Mod+udiaeresis { set-column-width "-10%"; } // key beside "+" on iso-de layout "ü"
     Mod+Plus { set-column-width "+10%"; }
 
     // Finer height adjustments when in column with other windows.
@@ -623,5 +631,6 @@ binds {
     Mod+Z { spawn "zeditor"; }
     Mod+B { spawn "firefox"; }
     Mod+E { spawn "nautilus"; }
+    Ctrl+Alt+K { spawn "keepassxc"; }
     Ctrl+Shift+Escape { spawn "resources"; }
 }
