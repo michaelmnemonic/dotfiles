@@ -111,6 +111,11 @@ output "LG Electronics LG HDR WQHD+ 301NTDV8S834" {
 	background-color "#6f6f6f"
 }
 
+cursor {
+    xcursor-theme "Adwaita"
+    xcursor-size 24
+}
+
 // Settings that influence how windows are positioned and sized.
 // Find more information on the wiki:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Layout
