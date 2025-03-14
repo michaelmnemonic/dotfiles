@@ -60,6 +60,10 @@
     box-shadow: none; /* Remove any shadow */
 }
 
+#workspaces button.active label {
+    color: #ffc87f;
+}
+
 box.module {
     padding-top: 2px;
     padding-bottom: 2px;
@@ -70,11 +74,11 @@ box.module {
     margin-left: 10px;
 }
 
-#battery.Discharging.warning {
-    color: orange;
+#battery.discharging.warning {
+    color: #ffc87f;
 }
 
-#battery.Discharging.critical {
+#battery.discharging.critical {
     color: red;
 }
 
