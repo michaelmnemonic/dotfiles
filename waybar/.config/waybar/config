@@ -10,6 +10,7 @@
     ],
     "modules-right": [
     "wireplumber",
+    "privacy",
     "network",
     "custom/power_charon",
     "battery",
@@ -92,7 +93,29 @@
         "car": "",
         "default": ["", "", ""]
       },
-      "on-click": "pavucontrol"
+      "on-click": "/run/current-system/sw/bin/pavucontrol"
+    },
+    "privacy": {
+    	"icon-spacing": 10,
+    	"icon-size": 13,
+    	"transition-duration": 250,
+    	"modules": [
+    		{
+    			"type": "screenshare",
+    			"tooltip": true,
+    			"tooltip-icon-size": 24
+    		},
+    		{
+    			"type": "audio-out",
+    			"tooltip": true,
+    			"tooltip-icon-size": 24
+    		},
+    		{
+    			"type": "audio-in",
+    			"tooltip": true,
+    			"tooltip-icon-size": 24
+    		}
+    	]
     },
     "custom/power": {
       "format": "⏻",
