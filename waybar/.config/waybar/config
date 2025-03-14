@@ -89,11 +89,11 @@
       "format": " @ {temperatureC}°C"
     },
     "battery": {
-      "states": {
-        "warning": 15,
-        "critical": 7
+        "states": {
+            "warning": 15,
+            "critical": 7
       },
-      "format": "{icon}  {capacity}%",
+      "format": "{icon}  {time}",
       "format-full": "{icon}  {capacity}%",
       "format-charging": "󱐋  {capacity}%",
       "format-plugged": "  {capacity}%",
