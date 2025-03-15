@@ -2,6 +2,9 @@
 decorations = "None"
 padding = { x = 5, y = 5 }
 
+[font]
+size = 9
+
 [cursor]
 style = { shape = "Underline", blinking = "On" }
 
