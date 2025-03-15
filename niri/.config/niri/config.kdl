@@ -372,6 +372,8 @@ window-rule {
 
 window-rule {
     match app-id="org.gnome.clocks"
+    default-column-width { fixed 500; }
+    default-window-height { fixed 400; }
     open-floating true
 }
 
