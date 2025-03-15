@@ -5,8 +5,6 @@
 
 prefer-no-csd
 
-spawn-at-startup "/run/current-system/sw/bin/keepassxc"
-
 environment {
     // Set display variable - note that this assumes xwayland-satellite binds to ":0" which is not guaranteed (but should work for single user session)
     DISPLAY ":0"
