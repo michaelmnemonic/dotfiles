@@ -75,8 +75,8 @@
       },
       "format": "{icon}  {time}",
       "format-full": "{icon}",
-      "format-charging": "󱐋  {time}%",
-      "format-plugged": "  {time}%",
+      "format-charging": "󱐋  {time}",
+      "format-plugged": "  {time}",
       "format-alt": "{time} {icon}",
       "format-icons": ["", "", "", "", ""],
       "tooltip-format": "Ladestand: {capacity}%"
