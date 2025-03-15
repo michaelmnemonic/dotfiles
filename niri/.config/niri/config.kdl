@@ -146,6 +146,7 @@ layout {
         proportion 0.33333
         proportion 0.5
         proportion 0.66667
+        proportion 1.0
 
         // Fixed sets the width in logical pixels exactly.
         // fixed 1920
@@ -386,7 +387,7 @@ window-rule {
 
 window-rule {
     match app-id="Alacritty"
-    default-column-width { fixed 700; }
+    default-column-width { proportion 0.33; }
 }
 
 // Example: block out two password managers from screen capture.
@@ -582,8 +583,8 @@ binds {
     // The following binds move the focused window in and out of a column.
     // If the window is alone, they will consume it into the nearby column to the side.
     // If the window is already in a column, they will expel it out.
-    Mod+BracketLeft  { consume-or-expel-window-left; }
-    Mod+BracketRight { consume-or-expel-window-right; }
+    Mod+Adiaeresis  { consume-or-expel-window-left; }
+    Mod+Numbersign { consume-or-expel-window-right; }
 
     // Consume one window from the right to the bottom of the focused column.
     Mod+Comma  { consume-window-into-column; }
