@@ -61,8 +61,8 @@
     /* Remove border */
     box-shadow: none;
     /* Remove any shadow */
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 2.5px;
+    margin-left: 2.5px;
 }
 
 #workspaces button.active label {
