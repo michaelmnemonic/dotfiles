@@ -395,6 +395,11 @@ window-rule {
     default-column-width { fixed 1400; }
 }
 
+window-rule {
+    match app-id="firefox"
+    default-column-width { fixed 1400; }
+}
+
 // Example: block out two password managers from screen capture.
 // (This example rule is commented out with a "/-" in front.)
 /-window-rule {
