@@ -55,9 +55,14 @@
 }
 
 #workspaces button {
-    background: none; /* Remove background */
-    border: none; /* Remove border */
-    box-shadow: none; /* Remove any shadow */
+    background: none;
+    /* Remove background */
+    border: none;
+    /* Remove border */
+    box-shadow: none;
+    /* Remove any shadow */
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 #workspaces button.active label {
