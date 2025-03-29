@@ -7,6 +7,9 @@ ConfigVersion=1
 [KonsoleWindow]
 RememberWindowSize=false
 
+[MainWindow]
+ToolBarsMovable=Disabled
+
 [Notification Messages]
 CloseAllTabs=true
 
