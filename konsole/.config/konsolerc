@@ -1,0 +1,21 @@
+[Desktop Entry]
+DefaultProfile=Profile 1.profile
+
+[General]
+ConfigVersion=1
+
+[KonsoleWindow]
+RememberWindowSize=false
+
+[Notification Messages]
+CloseAllTabs=true
+
+[SplitView]
+SplitViewVisibility=AlwaysHideSplitHeader
+
+[TabBar]
+ExpandTabWidth=true
+TabBarPosition=Bottom
+
+[UiSettings]
+ColorScheme=Breeze Dunkel
