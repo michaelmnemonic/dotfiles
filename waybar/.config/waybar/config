@@ -1,5 +1,5 @@
 {
-  "position": "left",
+  "position": "right",
   "layer": "top",
   "modules-left": [
     "niri/workspaces"
@@ -73,8 +73,8 @@
     },
     "format": "{icon}",
     "format-full": "{icon}",
-    "format-charging": "󱐋  {time}",
-    "format-plugged": "  {time}",
+    "format-charging": "󱐋",
+    "format-plugged": "",
     "format-alt": "{time} {icon}",
     "format-icons": [
       "",
