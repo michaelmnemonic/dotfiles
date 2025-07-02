@@ -1,147 +1,85 @@
 {
-    "position": "top",
-    "layer": "top",
-    "mode": "dock",
-    "modules-left": [
-      "niri/workspaces"
-    ],
-    "modules-center": [
-      "clock",
-      "mpris"
-    ],
-    "modules-right": [
-      "tray",
-      "wireplumber",
-      "privacy",
-      "network",
-      "battery",
-      "custom/power"
-    ],
-    "mpris": {
-      "format": "{player_icon} {title}",
-      "format-paused": "{status_icon} <i>{title}</i>",
-      "player-icons": {
-        "default": "▶",
-        "mpv": "󰝚",
-        "quodlibet": "󰝚"
-      },
-      "tooltip-format": "{dynamic}",
-        "status-icons": {
-        "paused": "󰏤"
-      },
-	    "ignored-players": ["firefox"]
-    },
-    "tray": {
-      "icon-size": 14,
-      "spacing": 10
-    },
-    "mpd": {
-      "format": "󰝚 {title} - {artist}",
-      "max-length": 200
-    },
-    "clock": {
-      "format": "{:%m-%d %H:%M}",
-      "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-      "format-alt": "{:%Y-%m-%d}",
-      "calendar": {
-        "mode"          : "year",
-        "mode-mon-col"  : 3,
-        "weeks-pos"     : "left",
-        "on-scroll"     : 1,
-        "format": {
-          "months":     "<span color='#ffead3'><b>{}</b></span>",
-          "days":       "<span color='#ecc6d9'><b>{}</b></span>",
-          "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
-          "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
-          "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
-        }
+  "position": "right",
+  "layer": "top",
+  "modules-left": [
+    "niri/workspaces"
+  ],
+  "modules-center": [
+    "clock"
+  ],
+  "modules-right": [
+    "tray",
+    "wireplumber",
+    "network",
+    "battery",
+    "custom/power"
+  ],
+  "tray": {
+    "icon-size": 14,
+    "spacing": 10
+  },
+  "clock": {
+    "format": "{:%m\n%d\n\n%H\n%M}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "calendar": {
+      "mode": "year",
+      "mode-mon-col": 3,
+      "weeks-pos": "left",
+      "on-scroll": 1,
+      "format": {
+        "months": "<span color='#ffead3'><b>{}</b></span>",
+        "days": "<span color='#ecc6d9'><b>{}</b></span>",
+        "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+        "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+        "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
       }
-    },
-    "cpu": {
-      "format": "  {usage}%",
-      "tooltip": false
-    },
-    "memory": {
-      "format": "  {percentage}%"
-    },
-    "temperature": {
-      "critical-threshold": 80,
-      "format": " @ {temperatureC}°C"
-    },
-    "battery": {
-      "states": {
-        "warning": 15,
-        "critical": 7
-      },
-      "format": "{icon}  {time}",
-      "format-full": "{icon}",
-      "format-charging": "󱐋  {time}",
-      "format-plugged": "  {time}",
-      "format-alt": "{time} {icon}",
-      "format-icons": ["", "", "", "", ""],
-      "tooltip-format": "Ladestand: {capacity}%"
-    },
-    "network": {
-      "format-wifi": "  {essid} ({signalStrength}%)",
-      "format-ethernet": "{cidr} ",
-      "tooltip-format": "{ifname} via {gwaddr} ",
-      "format-linked": "{ifname} (No IP) ",
-      "format-disconnected": " ⚠ ",
-      "format-alt": "{ifname}: {ipaddr}/{cidr}"
-    },
-    "wireplumber": {
-      "format": "{icon}  {node_name} ({volume}%)",
-      "format-bluetooth": "{volume}% {icon} {format_source}",
-      "format-bluetooth-muted": " {icon} {format_source}",
-      "format-muted": "",
-      "format-icons": {
-        "headphone": "",
-        "hands-free": "",
-        "headset": "",
-        "phone": "",
-        "portable": "",
-        "car": "",
-        "default": ["", "", ""]
-      },
-      "on-click": "/run/current-system/sw/bin/pavucontrol -t 3"
-    },
-    "privacy": {
-    	"icon-spacing": 10,
-    	"icon-size": 13,
-    	"transition-duration": 250,
-    	"modules": [
-    		{
-    			"type": "screenshare",
-    			"tooltip": true,
-    			"tooltip-icon-size": 24
-    		},
-    		{
-    			"type": "audio-out",
-    			"tooltip": true,
-    			"tooltip-icon-size": 24
-    		},
-    		{
-    			"type": "audio-in",
-    			"tooltip": true,
-    			"tooltip-icon-size": 24
-    		}
-    	]
-    },
-    "custom/power": {
-      "format": "⏻",
-      "on-click": "systemctl poweroff",
-      "tooltip": false
-    },
-    "custom/power_charon": {
-      "exec": "/home/maik/.config/waybar/power_charon.sh",
-      "interval": 5,
-      "format": "󰊚  {}",
-      "tooltip": false
-    },
-    "custom/gpu": {
-      "exec": "cat /sys/class/hwmon/hwmon4/device/gpu_busy_percent",
-      "format": "󰢮  {}%",
-      "return-type": "",
-      "interval": 5
     }
+  },
+  "battery": {
+    "states": {
+      "warning": 15,
+      "critical": 7
+    },
+    "format": "{icon}",
+    "format-full": "{icon}",
+    "format-charging": "󱐋",
+    "format-plugged": "",
+    "format-alt": "{time} {icon}",
+    "format-icons": ["","","","",""],
+    "tooltip-format": "Ladestand: {capacity}%\nZeit: {time}"
+  },
+  "network": {
+    "format-wifi": "",
+    "format-ethernet": "{cidr} ",
+    "tooltip-format": "{ifname} via {gwaddr} ",
+    "format-linked": "{ifname} (No IP) ",
+    "format-disconnected": "⚠",
+    "format-alt": "{ifname}: {ipaddr}/{cidr}",
+  },
+  "wireplumber": {
+    "format": "{icon}",
+    "format-bluetooth": "{volume}% {icon} {format_source}",
+    "format-bluetooth-muted": " {icon} {format_source}",
+    "format-muted": "",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": [
+        "",
+        "",
+        ""
+      ]
+    },
+    "on-click": "/run/current-system/sw/bin/pavucontrol -t 3"
+  },
+  "custom/power": {
+    "format": "⏻",
+    "on-click": "systemctl poweroff",
+    "tooltip": false,
+    "justify": "center"
+  }
 }
