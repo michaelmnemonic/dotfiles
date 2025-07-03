@@ -19,7 +19,7 @@
     "spacing": 10
   },
   "clock": {
-    "format": "{:%m\n%d\n\n%H\n%M}",
+    "format": "{:%d\n%m\n\n%H\n%M}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
     "calendar": {
       "mode": "year",
