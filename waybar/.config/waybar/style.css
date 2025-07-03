@@ -45,7 +45,7 @@
 }
 
 #battery.discharging.critical {
-    color: red;
+    color: @red;
 }
 
 #battery,
