@@ -46,12 +46,18 @@
     "format-charging": "󱐋",
     "format-plugged": "",
     "format-alt": "{time} {icon}",
-    "format-icons": ["","","","",""],
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
     "tooltip-format": "Ladestand: {capacity}%\nZeit: {time}"
   },
   "network": {
     "format-wifi": "",
-    "format-ethernet": "{cidr} ",
+    "format-ethernet": "󰈀",
     "tooltip-format": "{ifname} via {gwaddr} ",
     "format-linked": "{ifname} (No IP) ",
     "format-disconnected": "⚠",
