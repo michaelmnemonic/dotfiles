@@ -268,7 +268,8 @@ layout {
     // layer-shell panels and regular gaps.
     struts {
         // left 64
-        // right 64
+        // space for shadow on waybar
+        right -3
         // top 64
         // bottom 64
     }
@@ -355,6 +356,14 @@ window-rule {
 }
 
 window-rule {
+    match app-id=".blueman-manager-wrapped"
+    default-column-width { fixed 700; }
+    default-window-height { fixed 600; }
+    open-floating true
+    default-floating-position x=10 y=10 relative-to="bottom-right"
+}
+
+window-rule {
     match app-id="org.gnome.Calculator"
     open-floating true
 }
@@ -399,6 +408,11 @@ window-rule {
 
 window-rule {
     match app-id="firefox"
+    default-column-width { fixed 1400; }
+}
+
+window-rule {
+    match app-id="code"
     default-column-width { fixed 1400; }
 }
 
