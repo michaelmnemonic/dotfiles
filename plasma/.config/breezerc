@@ -1,0 +1,9 @@
+[Common]
+OutlineCloseButton=true
+ShadowSize=ShadowMedium
+ShadowStrength=191
+
+[Style]
+ScrollBarAddLineButtons=2
+ScrollBarSubLineButtons=1
+ToolBarDrawItemSeparator=false
