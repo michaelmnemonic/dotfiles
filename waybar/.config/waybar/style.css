@@ -39,8 +39,6 @@
     margin: 0px 0px 0px 3px;
     /* box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.7);*/
     box-shadow: 0 0 3 0px #151515;
-    transition-property: background-color;
-    transition-duration: 0.5s;
 }
 #workspaces button {
     background: transparent;
