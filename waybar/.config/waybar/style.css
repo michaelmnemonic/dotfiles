@@ -43,6 +43,9 @@
     margin-right: 10px;
 }
 
+#workspaces {
+    margin-left: 0;
+}
 #workspaces button {
     all: initial;
     padding: 0 6px;
@@ -73,5 +76,6 @@
 }
 
 #custom-power {
-    color: @red;
+    color: #dd7878;
+    margin-right: 0;
 }
