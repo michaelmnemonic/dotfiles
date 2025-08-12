@@ -21,36 +21,37 @@
 * {
     color: #ffffff;
     background-color: black;
+    border: none;
+    border-radius: 0;
+    min-height: 0;
     font-family:
         JetBrainsMono NFP,
         Regular;
     font-size: 12px;
     font-weight: bold;
-    transition: all 0.5s ease;
-}
-
-#waybar {
-    background-color: transparent;
-}
-
-#waybar > box {
-    /* background-color: rgba(18, 21, 29, 0.98);*/
-    background-color: black;
-    margin: 0px 0px 0px 3px;
-    /* box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.7);*/
-    box-shadow: 0 0 3 0px #151515;
-}
-#workspaces button {
-    background: transparent;
-    border: none;
-    box-shadow: none;
-    padding: 10px 12px;
-    margin: 0px;
 }
 
 #workspaces button.active label {
     color: #ffc87f;
-    font-weight: bolder;
+}
+
+.modules-left {
+    margin-left: 10px;
+}
+
+.modules-right {
+    margin-right: 10px;
+}
+
+#workspaces button {
+    all: initial;
+    padding: 0 6px;
+    margin: 0 1.5px;
+    min-width: 9px;
+}
+
+#workspaces button.empty {
+    opacity: 0.5;
 }
 
 #battery.discharging.warning {
@@ -67,8 +68,8 @@
 #network,
 #wireplumber,
 #tray {
-    padding: 10px 5px;
-    margin: 0px;
+    min-width: 12px;
+    margin: 0 10px;
 }
 
 #custom-power {
