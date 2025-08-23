@@ -457,7 +457,7 @@ binds {
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+Return { spawn "alacritty"; }
-    Mod+Space { spawn "fuzzel"; }
+    Mod+Space { spawn "walker"; }
     Mod+L { spawn "swaylock -i /home/maik/Bilder/Hintergründe/Wide/wallhaven-57r8x5.png"; }
 
     // You can also use a shell. Do this if you need pipes, multiple commands, etc.
