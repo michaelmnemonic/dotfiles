@@ -32,7 +32,7 @@
 }
 
 #workspaces button.active label {
-    color: #ffc87f;
+    color: #dc8a78;
 }
 
 .modules-left {
@@ -51,10 +51,6 @@
     padding: 0 6px;
     margin: 0 1.5px;
     min-width: 9px;
-}
-
-#workspaces button.empty {
-    opacity: 0.5;
 }
 
 #battery.discharging.warning {
@@ -76,6 +72,6 @@
 }
 
 #custom-power {
-    color: #dd7878;
+    color: #dc8a78;
     margin-right: 0;
 }
