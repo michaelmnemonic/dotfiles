@@ -335,6 +335,12 @@ window-rule {
     match app-id=r#"firefox$"# title="^Bild-im-Bild$"
     open-floating true
     default-floating-position x=10 y=10 relative-to="bottom-right"
+    shadow {
+        on
+    }
+    border {
+        off
+    }
 }
 
 window-rule {
@@ -466,7 +472,7 @@ binds {
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+Return { spawn "alacritty"; }
     Mod+Space { spawn "walker"; }
-    Mod+L { spawn "swaylock -i /home/maik/Bilder/Hintergründe/Wide/wallhaven-57r8x5.png"; }
+    Mod+L { spawn "hyprlock"; }
 
     // You can also use a shell. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument in the end.
