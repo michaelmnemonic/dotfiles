@@ -269,7 +269,7 @@ layout {
     struts {
         // left 64
         // space for shadow on waybar
-        right -3
+        // right -3
         // top 64
         // bottom 64
     }
