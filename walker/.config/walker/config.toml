@@ -48,7 +48,7 @@ placeholder = "No Results"
 
 [search]
 argument_delimiter = "#"
-placeholder = "Search..."
+placeholder = "Suchen..."
 delay = 0
 resume_last_query = false
 
@@ -56,17 +56,18 @@ resume_last_query = false
 labels = "jkl;asdf"
 
 [builtins.applications]
-weight = 5
+context_aware = true
+hide_actions_with_empty_query = true
+history = true
+launch_prefix = "uwsm app -- "
 name = "applications"
 placeholder = "Applications"
 prioritize_new = true
-hide_actions_with_empty_query = true
-context_aware = true
 refresh = true
-show_sub_when_single = true
-show_icon_when_single = true
 show_generic = true
-history = true
+show_icon_when_single = true
+show_sub_when_single = true
+weight = 5
 
 [builtins.applications.actions]
 enabled = true
