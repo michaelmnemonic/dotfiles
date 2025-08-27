@@ -13,6 +13,7 @@
     "tray",
     "mpris",
     "wireplumber",
+    "bluetooth",
     "network",
     "battery",
     "custom/power"
@@ -114,6 +115,13 @@
       ]
     },
     "on-click": "/run/current-system/sw/bin/pavucontrol -t 3"
+  },
+    "bluetooth": {
+    "format": "",
+    "format-disabled": "󰂲",
+    "format-connected": "",
+    "tooltip-format": "Verbundene Geräte: {num_connections}",
+    "on-click": "/run/current-system/sw/bin/pkill blueberry || /run/current-system/sw/bin/blueberry"
   },
   "custom/power": {
     "format": "⏻",
