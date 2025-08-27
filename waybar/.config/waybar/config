@@ -93,8 +93,8 @@
     "format-ethernet": "󰈀",
     "tooltip-format": "{ifname} via {gwaddr} ",
     "tooltip-format-wifi": "{essid} ({frequency} GHz)\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
-    "format-linked": "",
-    "format-disconnected": "⚠"
+    "format-linked": "󱞒",
+    "format-disconnected": "󱞐"
   },
   "wireplumber": {
     "format": "{icon}",
