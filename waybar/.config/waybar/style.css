@@ -31,25 +31,35 @@
     font-weight: bold;
 }
 
+#waybar {
+    background-color: transparent;
+}
+
+#waybar > box {
+    /* background-color: rgba(18, 21, 29, 0.98);*/
+    background-color: black;
+    margin: 0px 0px 0px 3px;
+    /* box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.7);*/
+    box-shadow: 0 0 3 0px #151515;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
 #workspaces button.active label {
-    color: #dc8a78;
+    color: #ffc87f;
 }
 
 .modules-left {
-    margin-left: 10px;
+    margin-top: 5px;
 }
 
 .modules-right {
-    margin-right: 10px;
+    margin-bottom: 5px;
 }
 
-#workspaces {
-    margin-left: 0;
-}
 #workspaces button {
     all: initial;
-    padding: 0 6px;
-    margin: 0 1.5px;
+    padding: 5px;
     min-width: 9px;
 }
 
@@ -70,10 +80,9 @@
 #mpris,
 #tray {
     min-width: 12px;
-    margin: 0 10px;
+    margin: 10px 15px 10px 15px;
 }
 
 #custom-power {
     color: #dc8a78;
-    margin-right: 5;
 }

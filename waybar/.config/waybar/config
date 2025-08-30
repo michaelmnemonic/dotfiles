@@ -1,10 +1,9 @@
 {
-  "position": "top",
+  "position": "right",
   "layer": "top",
   "spacing": 0,
-  "height": 30,
   "modules-left": [
-    "hyprland/workspaces"
+    "niri/workspaces"
   ],
   "modules-center": [
     "clock"
@@ -18,7 +17,7 @@
     "battery",
     "custom/power"
   ],
-  "hyprland/workspaces": {
+  "niri/workspaces": {
     "on-click": "activate",
     "format": "{icon}",
     "format-icons": {
@@ -53,7 +52,7 @@
     "spacing": 20
   },
   "clock": {
-    "format": "{:%d-%m %H:%M}",
+    "format": "{:%d\n%m\n\n%H\n%M}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
     "calendar": {
       "mode": "year",
