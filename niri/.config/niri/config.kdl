@@ -408,7 +408,7 @@ window-rule {
 
 window-rule {
     match app-id="thunderbird"
-    default-column-width { fixed 1400; }
+    default-column-width { proportion 1.0; }
     open-on-workspace "pim"
 }
 
