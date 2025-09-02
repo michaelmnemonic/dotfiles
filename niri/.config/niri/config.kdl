@@ -307,6 +307,10 @@ animations {
     // slowdown 3.0
 }
 
+workspace "pim"
+
+workspace "music"
+
 // Window rules let you adjust behavior for individual windows.
 // Find more information on the wiki:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Window-Rules
@@ -398,7 +402,14 @@ window-rule {
     match app-id="io.github.quodlibet.QuodLibet"
     default-column-width { fixed 1100; }
     default-window-height { fixed 900; }
+    open-on-workspace "music"
     open-floating true
+}
+
+window-rule {
+    match app-id="thunderbird"
+    default-column-width { fixed 1400; }
+    open-on-workspace "pim"
 }
 
 window-rule {
