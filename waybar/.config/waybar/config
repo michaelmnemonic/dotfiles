@@ -117,7 +117,7 @@
     "on-click": "/run/current-system/sw/bin/pavucontrol -t 3"
   },
     "bluetooth": {
-    "format": "",
+    "format": "",
     "format-disabled": "󰂲",
     "format-connected": "",
     "tooltip-format": "Verbundene Geräte: {num_connections}",
