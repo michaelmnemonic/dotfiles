@@ -435,6 +435,11 @@ window-rule {
     default-column-width { fixed 1400; }
 }
 
+window-rule {
+    match app-id="dev.zed.Zed"
+    tiled-state true
+}
+
 // Example: block out two password managers from screen capture.
 // (This example rule is commented out with a "/-" in front.)
 /-window-rule {
