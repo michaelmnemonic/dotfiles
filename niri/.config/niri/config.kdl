@@ -105,7 +105,7 @@ input {
 
 output "BOE 0x0964 Unknown" {
 	mode "1920x1200@60.003"
-	scale 1.2
+	scale 1.0
 	background-color "#6f6f6f"
 }
 
@@ -312,10 +312,10 @@ animations {
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Window-Rules
 
 // Round corner of windows
-//window-rule {
-//    geometry-corner-radius 8
-//    clip-to-geometry true
-//}
+window-rule {
+    geometry-corner-radius 8
+    clip-to-geometry true
+}
 
 // Work around WezTerm's initial configure bug
 // by setting an empty default-column-width.
@@ -475,7 +475,7 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
-    Mod+Return { spawn "alacritty"; }
+    Mod+Return { spawn "ptyxis"; }
     Mod+Space { spawn "walker"; }
     Mod+L { spawn "hyprlock"; }
 
