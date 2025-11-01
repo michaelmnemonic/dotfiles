@@ -9,7 +9,7 @@ size = 9
 style = { shape = "Underline", blinking = "On" }
 
 [terminal.shell]
-program = "/run/current-system/sw/bin/fish"
+program = "/run/current-system/sw/bin/bash"
 
 [colors.primary]
 background = "#eff1f5"
