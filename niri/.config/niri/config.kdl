@@ -311,12 +311,6 @@ animations {
 // Find more information on the wiki:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Window-Rules
 
-// Round corner of windows
-window-rule {
-    geometry-corner-radius 8
-    clip-to-geometry true
-}
-
 // Work around WezTerm's initial configure bug
 // by setting an empty default-column-width.
 window-rule {
