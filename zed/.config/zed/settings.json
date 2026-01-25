@@ -11,10 +11,60 @@
   "buffer_font_size": 16,
   "theme": {
     "mode": "system",
-    "light": "Adwaita Pastel Light",
-    "dark": "One Dark"
+    "light": "One Light",
+    "dark": "One Dark",
   },
   "edit_predictions": {
-    "mode": "subtle"
-  }
+    "mode": "subtle",
+  },
+  "title_bar": {
+    "show_sign_in": false,
+  },
+  "agent": {
+    "always_allow_tool_actions": true,
+    "default_model": {
+      "provider": "google",
+      "model": "gemini-3-flash-preview",
+    },
+    "model_parameters": [],
+  },
+  "context_servers": {
+    "nixos": {
+      "enabled": true,
+      "command": "nix",
+      "args": ["run", "github:utensils/mcp-nixos", "--"],
+      "env": {},
+    },
+  },
+  "ssh_connections": [
+    {
+      "host": "orpheus",
+      "args": [],
+      "projects": [
+        {
+          "paths": ["/etc/nixos"],
+        },
+      ],
+    },
+  ],
+  "language_models": {
+    "openai_compatible": {
+      "Llama.cpp": {
+        "api_url": "http://localhost:8080/v1",
+        "available_models": [
+          {
+            "name": "ggml-org/gpt-oss-20b-GGUF",
+            "display_name": "gpt-oss",
+            "max_tokens": 16000,
+            "capabilities": {
+              "tools": false,
+              "images": false,
+              "parallel_tool_calls": false,
+              "prompt_cache_key": false,
+            },
+          },
+        ],
+      },
+    },
+  },
 }
