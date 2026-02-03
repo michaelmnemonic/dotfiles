@@ -7,6 +7,14 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "agent_servers": {
+    "opencode": {
+      "type": "custom",
+      "command": "nix",
+      "args": ["run", "github:NixOS/nixpkgs#opencode", "--", "acp"],
+      "env": {},
+    },
+  },
   "ui_font_size": 16,
   "buffer_font_size": 16,
   "theme": {
