@@ -11,12 +11,8 @@ prefer-no-csd
 input {
     keyboard {
         xkb {
-            // You can set rules, model, layout, variant and options.
-            // For more information, see xkeyboard-config(7).
-
-            // For example:
-            layout "de"
-            // options "grp:win_space_toggle,compose:ralt,ctrl:nocaps"
+            //layout "de"
+            file "~/.config/niri/keymap"
         }
     }
 
@@ -285,6 +281,8 @@ layout {
 // which may be more convenient to use.
 // See the binds section below for more spawn examples.
 // spawn-at-startup "alacritty" "-e" "fish"
+
+spawn-at-startup "nix" "run" "github:NixOS/nixpkgs#voxtype" "--" "daemon"
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
 // If the client will specifically ask for CSD, the request will be honored.
@@ -711,9 +709,12 @@ binds {
     // moving the mouse or pressing any other key.
     Mod+Shift+P { power-off-monitors; }
 
-    Mod+Z { spawn "zeditor"; }
+    //Mod+Z { spawn "zeditor"; }
     Mod+B { spawn "firefox"; }
     Mod+E { spawn "nautilus"; }
     Ctrl+Alt+K { spawn "keepassxc"; }
     Ctrl+Shift+Escape { spawn "resources"; }
+
+    F23 { spawn "nix" "run" "github:NixOS/nixpkgs#voxtype" "--" "record" "toggle"; }
+    Mod+Z { spawn "nix" "run" "github:NixOS/nixpkgs#voxtype" "--" "record" "toggle"; }
 }
